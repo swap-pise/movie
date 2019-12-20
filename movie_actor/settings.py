@@ -40,16 +40,16 @@ INSTALLED_APPS = [
     'moviesinfo',
     'rest_framework', #restapi
     'rest_framework_swagger',#to extract rest uris
-    'rest_framework.authtoken'#secure
+    # 'rest_framework.authtoken'#secure
 ]
 #
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # <-- And here
-    ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
+    # 'DEFAULT_AUTHENTICATION_CLASSES': [
+    #     'rest_framework.authentication.TokenAuthentication',  # <-- And here
+    # ],
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
     'DEFAULT_SCHEMA_CLASS':
             'rest_framework.schemas.coreapi.AutoSchema',
 
